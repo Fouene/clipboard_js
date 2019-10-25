@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Mathieu Ght</title>
 </head>
 
@@ -17,13 +17,13 @@
             <a class="nav-link active text-dark" href="#">Presentation</a>
         </li>
         <li class="nav-item h5">
-            <a class="nav-link text-dark" href="#">Expérience Pro</a>
+            <a class="nav-link text-dark" href="#experience">Expérience Pro</a>
         </li>
         <li class="nav-item h5">
-            <a href="#projet" class="nav-link text-dark" href="#">Projets</a>
+            <a href="#projet" class="nav-link text-dark" href="#projet">Projets</a>
         </li>
         <li class="nav-item h5">
-            <a class="nav-link text-dark" href="#">Contact</a>
+            <a class="nav-link text-dark" href="#contact">Contact</a>
         </li>
     </ul>
     <div class="container">
@@ -31,7 +31,7 @@
         <section alt="presentation" class="container d-flex justify-content-center">
 
             <div class="col-lg-6 text-center">
-                <h2 class="text-center text-uppercase h3 m-5">Presentation</h2>
+                <h2 class="text-center text-uppercase h3 p-5">Presentation</h2>
                 <img class="rounded-circle" src="img/moi.jpg" width="140" height="140" />
                 <h2 class="text-center mt-3">Gauchet Mathieu</h2>
                 <p class="text-center mt-3">
@@ -41,9 +41,9 @@
                 </p>
             </div>
         </section>
-        <hr class="border border-secondary" />
+        <hr id="experience" class="border border-secondary" />
         <section>
-            <h2 class="text-center text-uppercase h3 m-5">Experience Pro</h2>
+            <h2 class="text-center text-uppercase h3 p-5">Experience Pro</h2>
             <div class="row d-flex justify-content-around p-5">
                 <div class="card" style="width: 18rem;">
                     <img src="img/logoiim.jpg" class="card-img-top" alt="...">
@@ -69,9 +69,9 @@
                 </div>
             </div>
         </section>
-        <hr class="border border-secondary" />
-        <section id="projet">
-            <h2 class="text-center text-uppercase h3 m-5">Projets</h2>
+        <hr id="projet" class="border border-secondary" />
+        <section>
+            <h2 class="text-center text-uppercase h3 p-5">Projets</h2>
             <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-interval="10000">
@@ -95,75 +95,46 @@
             </div>
         </section>
         <hr class="border border-secondary" />
-        <section></section>
-        <!-- <section>
-            <h1 class="text-center p-4">Contact</h1>
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Nom</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nom">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Prenom</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Prenom">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
-                    </div>
-                    <div class="text-center p-4">
-                        <button type="submit" class="btn btn-dark">Submit</button>
-                    </div>
-                </form>
-        </section> -->
+        <section id="contact">
+            <h2 class="text-center text-uppercase h3 p-5">contact</h2>
+            <footer class="page-footer font-small special-color-dark pt-4">
+                <!-- Footer Elements -->
+                <div class="container">
+                    <!-- Social buttons -->
+                    <ul class="list-unstyled list-inline text-center">
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-li mx-1 text-dark" href="https://www.linkedin.com/in/mathieu-gauchet-bb5664179/">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-li mx-1 text-dark" href="https://github.com/Mathieught">
+                                <i class="fab fa-github" aria-hidden="true"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-li mx-1 text-dark" href="mailto:mathieu.ght@gmail.com">
+                                <i class="fas fa-envelope" aria-hidden="true"> </i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Social buttons -->
+                </div>
+                <!-- Footer Elements -->
+        
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">
+                    © 2018 Copyright:
+                    <a href="https://mathieu-gauchet.ga/" target="blank">mathieu-gauchet.ga</a>
+                </div>
+                <!-- Copyright -->
+        
+            </footer>
+        </section>
+        
+        <hr class="border border-secondary" />
     </div>
-    <footer class="page-footer font-small special-color-dark pt-4">
-        <!-- Footer Elements -->
-        <div class="container">
-            <!-- Social buttons -->
-            <ul class="list-unstyled list-inline text-center">
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-fb mx-1">
-                        <i class="fab fa-facebook-f"> </i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-tw mx-1">
-                        <i class="fab fa-twitter"> </i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-gplus mx-1">
-                        <i class="fab fa-google-plus-g"> </i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-li mx-1">
-                        <i class="fab fa-linkedin-in"> </i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-dribbble mx-1">
-                        <i class="fab fa-dribbble"> </i>
-                    </a>
-                </li>
-            </ul>
-            <!-- Social buttons -->
-        </div>
-        <!-- Footer Elements -->
 
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">
-            © 2018 Copyright:
-            <a href="https://mathieu-gauchet.ga/" target="blank">mathieu-gauchet.ga</a>
-        </div>
-        <!-- Copyright -->
-
-    </footer>
 
     <script src="https://kit.fontawesome.com/b93fd05ef1.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
