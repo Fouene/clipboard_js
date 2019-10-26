@@ -11,20 +11,20 @@
 </head>
 
 <body>
-    <ul class="nav justify-content-center p-2 bg-light sticky-top">
-        <li class="nav-item h5">
-            <a class="nav-link active text-dark" href="#">Presentation</a>
-        </li>
-        <li class="nav-item h5">
-            <a class="nav-link text-dark" href="#experience">Expérience Pro</a>
-        </li>
-        <li class="nav-item h5">
-            <a href="#projet" class="nav-link text-dark" href="#projet">Projets</a>
-        </li>
-        <li class="nav-item h5">
-            <a class="nav-link text-dark" href="#contact">Contact</a>
-        </li>
-    </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top text-center">
+        <a class="navbar-brand" href="#">Mathieu Ght</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link text-dark" href="#">Présentation</a>
+                <a class="nav-item nav-link text-dark" href="#experience">Expérience Pro</a>
+                <a class="nav-item nav-link text-dark" href="#projet">Projet</a>
+                <a class="nav-item nav-link text-dark" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
     <div class="container">
 
         <section alt="presentation" class="container d-flex justify-content-center">
@@ -95,16 +95,16 @@
             <footer>
                 <div class="text-center mb-5">
                     <a href="https://github.com/Mathieught" target="blank">
-                            <i class="fab fa-github fa-2x text-dark m-3"></i>
-                        </a>
+                        <i class="fab fa-github fa-2x text-dark m-3"></i>
+                    </a>
                     <a href="https://linkedin.com/in/mathieu-gauchet-bb5664179" target="blank">
-                            <i class="fab fa-linkedin-in fa-2x text-dark m-3"></i>
-                        </a>
+                        <i class="fab fa-linkedin-in fa-2x text-dark m-3"></i>
+                    </a>
                     <a href="mailto:mathieu.ght@gmail.com" target="blank">
-                            <i class="fas fa-envelope fa-2x text-dark m-3"></i>
-                        </a>
+                        <i class="fas fa-envelope fa-2x text-dark m-3"></i>
+                    </a>
                 </div>
-                        
+
                 <!-- Copyright -->
                 <div class="text-center m-3">
                     © 2018 Copyright:
@@ -117,11 +117,20 @@
         <hr class="border border-secondary" />
     </div>
 
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/b93fd05ef1.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $('.navbar a').click(function() {
+            setTimeout(function(){
+		$(".navbar-collapse").collapse('hide');
+	}, 700);
+            
+        });
+    </script>
+    
 </body>
 
 </html>
